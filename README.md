@@ -25,14 +25,5 @@ python -m pip install -r requirements.txt
 python main.py
 ```
 
-## YOLO26 权重
-将 `yolo26n.pt` 放入：
 
-```text
-models/yolo26n.pt
-```
 
-当前工程会优先加载该权重；未提供权重时保留 OpenCV 兜底检测流程。
-
-## 注意
-`ppo_agent.py` 当前为调度策略接口/原型，并非经过训练的 PPO 神经网络权重；`yolo26_lie.py` 当前为 YOLO26 与李代数、超图、粒球模块的工程融合接口。不要将其描述为已经完成专门训练的 YOLO26-Lie 或 PPO 模型。
